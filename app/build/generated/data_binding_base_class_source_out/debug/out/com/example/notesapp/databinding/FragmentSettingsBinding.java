@@ -11,6 +11,7 @@ import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.notesapp.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.radiobutton.MaterialRadioButton;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 import java.lang.NullPointerException;
@@ -25,6 +26,9 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final SwitchMaterial darkModeSwitch;
 
   @NonNull
+  public final FloatingActionButton fabAddNote;
+
+  @NonNull
   public final MaterialRadioButton fontMonospace;
 
   @NonNull
@@ -37,11 +41,12 @@ public final class FragmentSettingsBinding implements ViewBinding {
   public final RadioGroup fontStyleGroup;
 
   private FragmentSettingsBinding(@NonNull NestedScrollView rootView,
-      @NonNull SwitchMaterial darkModeSwitch, @NonNull MaterialRadioButton fontMonospace,
-      @NonNull MaterialRadioButton fontNormal, @NonNull MaterialRadioButton fontSerif,
-      @NonNull RadioGroup fontStyleGroup) {
+      @NonNull SwitchMaterial darkModeSwitch, @NonNull FloatingActionButton fabAddNote,
+      @NonNull MaterialRadioButton fontMonospace, @NonNull MaterialRadioButton fontNormal,
+      @NonNull MaterialRadioButton fontSerif, @NonNull RadioGroup fontStyleGroup) {
     this.rootView = rootView;
     this.darkModeSwitch = darkModeSwitch;
+    this.fabAddNote = fabAddNote;
     this.fontMonospace = fontMonospace;
     this.fontNormal = fontNormal;
     this.fontSerif = fontSerif;
@@ -81,6 +86,12 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fabAddNote;
+      FloatingActionButton fabAddNote = ViewBindings.findChildViewById(rootView, id);
+      if (fabAddNote == null) {
+        break missingId;
+      }
+
       id = R.id.font_monospace;
       MaterialRadioButton fontMonospace = ViewBindings.findChildViewById(rootView, id);
       if (fontMonospace == null) {
@@ -105,8 +116,8 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSettingsBinding((NestedScrollView) rootView, darkModeSwitch, fontMonospace,
-          fontNormal, fontSerif, fontStyleGroup);
+      return new FragmentSettingsBinding((NestedScrollView) rootView, darkModeSwitch, fabAddNote,
+          fontMonospace, fontNormal, fontSerif, fontStyleGroup);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

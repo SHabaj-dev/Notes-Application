@@ -48,6 +48,7 @@ id content_edit_text
 id content_layout
 id dark_mode_switch
 id fab
+id fabAddNote
 id fab_save
 id font_monospace
 id font_normal
