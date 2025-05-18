@@ -43,8 +43,12 @@ class MainActivity : AppCompatActivity() {
 
         // Handle navigation destination changes
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            // Show/hide FAB based on destination
+            val isEditNote = destination.id == R.id.navigation_edit_note
+            
+            // Show/hide FAB and BottomAppBar based on destination
             binding.fab.isVisible = destination.id == R.id.navigation_home
+            binding.bottomAppBar.isVisible = !isEditNote
+            binding.bottomNavigation.isVisible = !isEditNote
             
             // Set toolbar title based on destination
             when (destination.id) {
