@@ -66,11 +66,11 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupFab() {
-        binding.fabAddNote.setOnClickListener {
-            findNavController().navigate(
-                HomeFragmentDirections.actionHomeToEdit(-1L)
-            )
-        }
+//        binding.fabAddNote.setOnClickListener {
+//            findNavController().navigate(
+//                HomeFragmentDirections.actionHomeToEdit(-1L)
+//            )
+//        }
     }
 
     private fun observeNotes() {

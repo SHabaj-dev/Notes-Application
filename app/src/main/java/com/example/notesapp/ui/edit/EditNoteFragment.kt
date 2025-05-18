@@ -12,6 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import coil.load
+import com.example.notesapp.MainActivity
 import com.example.notesapp.R
 import com.example.notesapp.data.entity.Note
 import com.example.notesapp.databinding.FragmentEditNoteBinding
@@ -68,6 +69,9 @@ class EditNoteFragment : Fragment() {
         binding.toolbar.setNavigationOnClickListener {
             findNavController().navigateUp()
         }
+        
+        // Hide the main activity's toolbar
+        (requireActivity() as MainActivity).supportActionBar?.hide()
     }
 
     private fun setupBottomAppBar() {
@@ -161,6 +165,8 @@ class EditNoteFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        // Show the main activity's toolbar when leaving the fragment
+        (requireActivity() as MainActivity).supportActionBar?.show()
         _binding = null
     }
 } 
