@@ -1,0 +1,184 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.notesapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:5:5-80
+11-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:5:22-77
+12    <uses-permission
+12-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:6:5-7:38
+13        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+13-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:6:22-78
+14        android:maxSdkVersion="28" />
+14-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:7:9-35
+15
+16    <permission
+16-->[androidx.core:core:1.12.0] /Users/shabaj/.gradle/caches/8.12/transforms/cac06781151a9b2f23340b1d37a51acb/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+17        android:name="com.example.notesapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.12.0] /Users/shabaj/.gradle/caches/8.12/transforms/cac06781151a9b2f23340b1d37a51acb/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.12.0] /Users/shabaj/.gradle/caches/8.12/transforms/cac06781151a9b2f23340b1d37a51acb/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.example.notesapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.12.0] /Users/shabaj/.gradle/caches/8.12/transforms/cac06781151a9b2f23340b1d37a51acb/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.12.0] /Users/shabaj/.gradle/caches/8.12/transforms/cac06781151a9b2f23340b1d37a51acb/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:9:5-40:19
+23        android:name="com.example.notesapp.NotesApplication"
+23-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:10:9-41
+24        android:allowBackup="true"
+24-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:11:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.12.0] /Users/shabaj/.gradle/caches/8.12/transforms/cac06781151a9b2f23340b1d37a51acb/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:icon="@mipmap/ic_launcher"
+28-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:12:9-43
+29        android:label="@string/app_name"
+29-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:13:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:14:9-54
+31        android:supportsRtl="true"
+31-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:15:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.NotesApp" >
+33-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:16:9-46
+34        <activity
+34-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:18:9-25:20
+35            android:name="com.example.notesapp.MainActivity"
+35-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:19:13-41
+36            android:exported="true" >
+36-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:20:13-36
+37            <intent-filter>
+37-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:21:13-24:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:22:17-69
+38-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:22:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:23:17-77
+40-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:23:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <provider
+45            android:name="androidx.core.content.FileProvider"
+45-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:28:13-62
+46            android:authorities="com.example.notesapp.fileprovider"
+46-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:29:13-64
+47            android:exported="false"
+47-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:30:13-37
+48            android:grantUriPermissions="true" >
+48-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:31:13-47
+49            <meta-data
+49-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:32:13-34:54
+50                android:name="android.support.FILE_PROVIDER_PATHS"
+50-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:33:17-67
+51                android:resource="@xml/file_paths" />
+51-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:34:17-51
+52        </provider>
+53
+54        <meta-data
+54-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:36:9-38:57
+55            android:name="preloaded_fonts"
+55-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:37:13-43
+56            android:resource="@array/preloaded_fonts" />
+56-->/Users/shabaj/Desktop/Projects/Notes Application/app/src/main/AndroidManifest.xml:38:13-54
+57
+58        <provider
+58-->[androidx.emoji2:emoji2:1.2.0] /Users/shabaj/.gradle/caches/8.12/transforms/e331b21f343f7fe4f8b2c20cb9caa9ba/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+59            android:name="androidx.startup.InitializationProvider"
+59-->[androidx.emoji2:emoji2:1.2.0] /Users/shabaj/.gradle/caches/8.12/transforms/e331b21f343f7fe4f8b2c20cb9caa9ba/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+60            android:authorities="com.example.notesapp.androidx-startup"
+60-->[androidx.emoji2:emoji2:1.2.0] /Users/shabaj/.gradle/caches/8.12/transforms/e331b21f343f7fe4f8b2c20cb9caa9ba/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+61            android:exported="false" >
+61-->[androidx.emoji2:emoji2:1.2.0] /Users/shabaj/.gradle/caches/8.12/transforms/e331b21f343f7fe4f8b2c20cb9caa9ba/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+62            <meta-data
+62-->[androidx.emoji2:emoji2:1.2.0] /Users/shabaj/.gradle/caches/8.12/transforms/e331b21f343f7fe4f8b2c20cb9caa9ba/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+63-->[androidx.emoji2:emoji2:1.2.0] /Users/shabaj/.gradle/caches/8.12/transforms/e331b21f343f7fe4f8b2c20cb9caa9ba/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+64                android:value="androidx.startup" />
+64-->[androidx.emoji2:emoji2:1.2.0] /Users/shabaj/.gradle/caches/8.12/transforms/e331b21f343f7fe4f8b2c20cb9caa9ba/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/shabaj/.gradle/caches/8.12/transforms/af371bec318de7e28792574c2383df3b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+66-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/shabaj/.gradle/caches/8.12/transforms/af371bec318de7e28792574c2383df3b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+67                android:value="androidx.startup" />
+67-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/shabaj/.gradle/caches/8.12/transforms/af371bec318de7e28792574c2383df3b/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+70                android:value="androidx.startup" />
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+71        </provider>
+72
+73        <uses-library
+73-->[androidx.window:window:1.0.0] /Users/shabaj/.gradle/caches/8.12/transforms/6e9bee2c8cee62a7b656240c400ce9c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+74            android:name="androidx.window.extensions"
+74-->[androidx.window:window:1.0.0] /Users/shabaj/.gradle/caches/8.12/transforms/6e9bee2c8cee62a7b656240c400ce9c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+75            android:required="false" />
+75-->[androidx.window:window:1.0.0] /Users/shabaj/.gradle/caches/8.12/transforms/6e9bee2c8cee62a7b656240c400ce9c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+76        <uses-library
+76-->[androidx.window:window:1.0.0] /Users/shabaj/.gradle/caches/8.12/transforms/6e9bee2c8cee62a7b656240c400ce9c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+77            android:name="androidx.window.sidecar"
+77-->[androidx.window:window:1.0.0] /Users/shabaj/.gradle/caches/8.12/transforms/6e9bee2c8cee62a7b656240c400ce9c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+78            android:required="false" />
+78-->[androidx.window:window:1.0.0] /Users/shabaj/.gradle/caches/8.12/transforms/6e9bee2c8cee62a7b656240c400ce9c9/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+79
+80        <service
+80-->[androidx.room:room-runtime:2.6.1] /Users/shabaj/.gradle/caches/8.12/transforms/da7d81cd434b49de8745b9664384837e/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+81            android:name="androidx.room.MultiInstanceInvalidationService"
+81-->[androidx.room:room-runtime:2.6.1] /Users/shabaj/.gradle/caches/8.12/transforms/da7d81cd434b49de8745b9664384837e/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+82            android:directBootAware="true"
+82-->[androidx.room:room-runtime:2.6.1] /Users/shabaj/.gradle/caches/8.12/transforms/da7d81cd434b49de8745b9664384837e/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+83            android:exported="false" />
+83-->[androidx.room:room-runtime:2.6.1] /Users/shabaj/.gradle/caches/8.12/transforms/da7d81cd434b49de8745b9664384837e/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+84
+85        <receiver
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+86            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+87            android:directBootAware="false"
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+88            android:enabled="true"
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+89            android:exported="true"
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+90            android:permission="android.permission.DUMP" >
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+92                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+95                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+98                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+99            </intent-filter>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+101                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/shabaj/.gradle/caches/8.12/transforms/1c3f2e47884d7e176d78445cba3118c2/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+102            </intent-filter>
+103        </receiver>
+104    </application>
+105
+106</manifest>

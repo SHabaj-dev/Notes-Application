@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-mergeDebugResources-52:/layout/fragment_edit_note.xml",
+        "source": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-main-55:/layout/fragment_edit_note.xml"
+    },
+    {
+        "merged": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-mergeDebugResources-52:/layout/activity_main.xml",
+        "source": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-main-55:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-mergeDebugResources-52:/layout/item_note.xml",
+        "source": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-main-55:/layout/item_note.xml"
+    },
+    {
+        "merged": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-mergeDebugResources-52:/layout/fragment_settings.xml",
+        "source": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-main-55:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.example.notesapp-mergeDebugResources-52:/layout/fragment_home.xml",
+        "source": "com.example.notesapp-main-55:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-mergeDebugResources-52:/layout/fragment_home.xml",
+        "source": "/Users/shabaj/.gradle/daemon/8.12/com.example.notesapp-main-55:/layout/fragment_home.xml"
+    }
+]
